@@ -29,7 +29,7 @@ public class Book {
 @JoinTable(name = "book_category",
 joinColumns = @JoinColumn(name = "book_id"),
 inverseJoinColumns = @JoinColumn(name = "category_id"))
-    private List<Category> categories;
+    private List<Category> categories;;
 
 
 }
