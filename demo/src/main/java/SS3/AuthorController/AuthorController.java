@@ -1,6 +1,6 @@
 package SS3.AuthorController;
 
-import SS3.model.Author;
+import SS3.model.entity.Author;
 import SS3.service.AuthorService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;

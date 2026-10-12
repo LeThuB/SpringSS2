@@ -1,6 +1,6 @@
 package SS3.Repository;
 
-import SS3.model.Author;
+import SS3.model.entity.Author;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;

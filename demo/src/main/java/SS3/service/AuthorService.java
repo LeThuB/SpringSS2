@@ -1,8 +1,7 @@
 package SS3.service;
 
 import SS3.Repository.AuthorRepository;
-import SS3.model.Author;
-import org.springframework.beans.factory.annotation.Autowired;
+import SS3.model.entity.Author;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
