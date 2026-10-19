@@ -49,11 +49,11 @@ public ResponseEntity<List<Order>> findByStatus(@RequestParam("status")String st
         return new ResponseEntity<>(orderService.findOrderHighPrice(), HttpStatus.OK);
     }
 
-    @GetMapping("/findAllAndSearch")
-    public ResponseEntity<PaginationResponse<OrderSummary>> findAllAndSearch(@RequestParam("page") int page, @RequestParam("size") int size){
-        Pageable pageable = PageRequest.of(page,size);
-        return new ResponseEntity<>(orderService.findAllAndPagination(pageable),HttpStatus.OK);
-    }
+//    @GetMapping("/findAllAndSearch")
+//    public ResponseEntity<PaginationResponse<OrderSummary>> findAllAndSearch(@RequestParam("page") int page, @RequestParam("size") int size){
+//        Pageable pageable = PageRequest.of(page,size);
+//        return new ResponseEntity<>(orderService.findAllAndPagination(pageable),HttpStatus.OK);
+//    }
 
 
 }
