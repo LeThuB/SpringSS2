@@ -1,0 +1,20 @@
+package SS8.SS81.model.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.springframework.boot.web.servlet.ServletRegistration;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+public class StudentResponseDto {
+    private String fullName;
+    private String major;
+    private int age;
+    private Double gpa;
+    private String studentCode;
+}
