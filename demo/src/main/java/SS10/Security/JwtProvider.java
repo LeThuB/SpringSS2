@@ -33,6 +33,13 @@ public class JwtProvider {
                 .signWith(SignatureAlgorithm.HS256, secret)
                 .compact();
     }
+    public boolean validateToken(String token){
+        return !Jwts.parser().setSigningKey(secret).parseClaimsJwt(token).getBody().isEmpty();
+    }
+
+    public String getUsernameFromToken(String token){
+        return Jwts.parser().setSigningKey(secret).parseClaimsJwt(token).getBody().getSubject();
+    }
 
     }
 
